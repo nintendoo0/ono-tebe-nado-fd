@@ -52,3 +52,82 @@
 .contacts a{
     text-underline-offset: 4px;
 }
+
+.cover {
+    position: relative;
+    min-height: 757px;
+    padding: 165px 50px 50px;
+    color: #fff;
+    background-color: #000;
+    background-image: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0  / 60%);
+}
+
+.cover__title,
+.cover__description {
+    position: relative;
+    z-index: 1;
+}
+
+.cover__title{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.aligned-text{
+    display: block;
+}
+
+.aligned-text_left{
+    justify-self: start;
+}
+
+.aligned-text_center{
+    justify-self: center;
+}
+
+.aligned-text_right{
+    justify-self: end;
+}
+
+.cover__description{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 30px;
+    margin-top: 106px;
+}
+
+.cover__description-text{
+    font-size: 22px;
+    line-height: 28px;
+    word-spacing: 18px;
+    text-transform: uppercase;
+}
+
+.bet-button{
+    min-width: 256px;
+    min-height: 51px;
+    padding: 11px 30px;
+    border: 1px solid currentColor;
+    color: inherit;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+}
