@@ -104,6 +104,10 @@
     justify-self: end;
 }
 
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
 .cover__description{
     display: flex;
     justify-content: space-between;
@@ -152,6 +156,10 @@
     list-style-type: none;
 }
 
+.lots__card-list-item {
+    min-height: 596px;
+}
+
 .card-link {
     display: block;
     height: 100%;
@@ -164,9 +172,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
-    min-height: 596px;
     height: 100%;
-    padding: 58px 40px;
+    padding: 48px 40px;
     color: #fff;
     background-color: #000;
     background-repeat: no-repeat;
@@ -286,7 +293,7 @@
     text-underline-offset: 4px;
 }
 
-.footer__menu-link:active {
+.footer__menu-link_active {
     text-decoration: none;
 }
 
